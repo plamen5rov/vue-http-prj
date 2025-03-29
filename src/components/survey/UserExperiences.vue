@@ -20,6 +20,7 @@
 </template>
 
 <script>
+// import { mounted } from 'vue';
 import SurveyResult from './SurveyResult.vue';
 
 export default {
@@ -49,6 +50,9 @@ export default {
           }
         });
       // console.log(this.results);
+    },
+    mounted() {
+      this.loadExperiences();
     },
   },
 };
